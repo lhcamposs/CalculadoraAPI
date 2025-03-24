@@ -1,4 +1,4 @@
-package com.example.calculadoraapi.Utils;
+package com.example.calculadoraapi.Exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

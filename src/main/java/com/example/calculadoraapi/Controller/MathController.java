@@ -2,7 +2,7 @@ package com.example.calculadoraapi.Controller;
 
 import com.example.calculadoraapi.Service.SimpleMath;
 import com.example.calculadoraapi.Utils.NumberConverter;
-import com.example.calculadoraapi.Utils.UnsupportedMathOperationException;
+import com.example.calculadoraapi.Exceptions.UnsupportedMathOperationException;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

@@ -1,7 +1,7 @@
-package com.example.calculadoraapi.Controller;
+package com.example.calculadoraapi.Exceptions.Handler;
 
-import com.example.calculadoraapi.Utils.ExceptionResponse;
-import com.example.calculadoraapi.Utils.UnsupportedMathOperationException;
+import com.example.calculadoraapi.Exceptions.ExceptionResponse;
+import com.example.calculadoraapi.Exceptions.UnsupportedMathOperationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

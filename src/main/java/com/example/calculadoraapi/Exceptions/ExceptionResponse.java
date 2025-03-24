@@ -1,4 +1,4 @@
-package com.example.calculadoraapi.Utils;
+package com.example.calculadoraapi.Exceptions;
 
 import java.util.Date;
 
