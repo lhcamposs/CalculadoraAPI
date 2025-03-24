@@ -12,7 +12,8 @@ public class MathController {
 
     @RequestMapping(value = "/sum/{numberOne}/{numberTwo}",
     method = RequestMethod.GET)
-    public Double sum(@PathVariable(value = "numberOne") String numberOne, @PathVariable(value = "numberTwo") String numberTwo) {
+    public Double sum(@PathVariable(value = "numberOne") String numberOne,
+                      @PathVariable(value = "numberTwo") String numberTwo) {
         Double n1 = Double.parseDouble(numberOne);
         Double n2= Double.parseDouble(numberTwo);
 
@@ -21,7 +22,8 @@ public class MathController {
 
     @RequestMapping(value = "/subtraction/{numberOne}/{numberTwo}",
     method = RequestMethod.GET)
-    public Double substraction(@PathVariable(value = "numberOne") String numberOne, @PathVariable(value = "numberTwo") String numberTwo) {
+    public Double subtraction(@PathVariable(value = "numberOne") String numberOne,
+                              @PathVariable(value = "numberTwo") String numberTwo) {
         Double n1 = Double.parseDouble(numberOne);
         Double n2= Double.parseDouble(numberTwo);
 
@@ -30,7 +32,8 @@ public class MathController {
 
     @RequestMapping(value = "/multiplication/{numberOne}/{numberTwo}",
             method = RequestMethod.GET)
-    public Double multiplication(@PathVariable(value = "numberOne") String numberOne, @PathVariable(value = "numberTwo") String numberTwo) {
+    public Double multiplication(@PathVariable(value = "numberOne") String numberOne,
+                                 @PathVariable(value = "numberTwo") String numberTwo) {
         Double n1 = Double.parseDouble(numberOne);
         Double n2= Double.parseDouble(numberTwo);
 
@@ -39,7 +42,8 @@ public class MathController {
 
     @RequestMapping(value = "/division/{numberOne}/{numberTwo}",
             method = RequestMethod.GET)
-    public Double division(@PathVariable(value = "numberOne") String numberOne, @PathVariable(value = "numberTwo") String numberTwo) {
+    public Double division(@PathVariable(value = "numberOne") String numberOne,
+                           @PathVariable(value = "numberTwo") String numberTwo) {
         Double n1 = Double.parseDouble(numberOne);
         Double n2= Double.parseDouble(numberTwo);
 
@@ -48,11 +52,19 @@ public class MathController {
 
     @RequestMapping(value = "/mean/{numberOne}/{numberTwo}",
             method = RequestMethod.GET)
-    public Double mean(@PathVariable(value = "numberOne") String numberOne, @PathVariable(value = "numberTwo") String numberTwo) {
+    public Double mean(@PathVariable(value = "numberOne") String numberOne,
+                       @PathVariable(value = "numberTwo") String numberTwo) {
         Double n1 = Double.parseDouble(numberOne);
         Double n2= Double.parseDouble(numberTwo);
 
         return math.mean(n1, n2);
+    }
+
+    @RequestMapping(value = "/square/{numberOne}", method = RequestMethod.GET)
+    public Double square(@PathVariable(value = "numberOne")String numberOne) {
+        Double n1 = Double.parseDouble(numberOne);
+        
+        return math.squareRoot(n1);
     }
 
 }
